@@ -89,6 +89,7 @@ if [ ! $(which pyenv) ]; then
 	pip install poetry
 	pyenv deactivate
 	pyenv global 3.7.7 tools
+	poetry config virtualenvs.in-project true
 fi
 	
 # COPY DOTFILES
